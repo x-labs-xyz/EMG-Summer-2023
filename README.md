@@ -37,11 +37,17 @@ Evaluation:
 
 
 Week 1: Set up the experimental environment, including the EMG sensor array and motion capture system. Recruit participants and obtain informed consent.
+
 Week 2: Familiarize participants with the EMG sensors and perform initial calibration to establish a baseline for muscle activation patterns.
+
 Week 3: Conduct data collection sessions with participants. Record EMG signals while participants perform a variety of hand movements.
+
 Week 4: Preprocess and clean the collected EMG data. Develop feature extraction algorithms to capture relevant information from the signals.
+
 Week 5: Perform data analysis to figure out the relations and insights provided by the data. If time permits, also train and optimize a machine learning model using the extracted features. Implement classification algorithms for mapping EMG signals to specific hand movements.
+
 Week 6: Evaluate the performance of the trained models using cross-validation techniques. Analyze the results and iterate on the algorithms if necessary.
+
 Week 7-8: Summarize findings, draw conclusions, and prepare the final report.
 
 
