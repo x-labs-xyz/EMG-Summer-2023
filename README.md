@@ -64,7 +64,9 @@ HPU
 
 
 IEEE: 2023 IEEE International Conference on Big Data (IEEE BigData 2023):  Submission Deadline: Sunday 03 Sep 2023
+
 Wageningen University and Research:  Submission Deadline: 11th May 
+
 ACM : Submission Deadline:  08 September
 
 
