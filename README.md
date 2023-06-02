@@ -56,7 +56,9 @@ Week 7-8: Summarize findings, draw conclusions, and prepare the final report.
 **Resources:**
 
 Surface EMG device
+
 Data acquisition software
+
 HPU
 
 
