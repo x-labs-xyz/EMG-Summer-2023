@@ -42,7 +42,7 @@ Week 2: Familiarize participants with the EMG sensors and perform initial calibr
 
 Week 3: Conduct data collection sessions with participants. Record EMG signals while participants perform a variety of hand movements.
 
-Week 4: Preprocess and clean the collected EMG data. Develop feature extraction algorithms to capture relevant information from the signals.
+Week 4: Preprocess and clean the collected EMG data. 
 
 Week 5: Perform data analysis to figure out the relations and insights provided by the data. If time permits, also train and optimize a machine learning model using the extracted features. Implement classification algorithms for mapping EMG signals to specific hand movements.
 
