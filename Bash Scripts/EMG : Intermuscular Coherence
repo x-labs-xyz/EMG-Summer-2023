@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir="EMG : Intermuscular Coherence "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.mat
+wget "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/37wyv32y8j-1.zip" -O "$download_dir/scripts.mat.zip"
+
