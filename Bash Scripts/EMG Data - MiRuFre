@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="EMG Data - MiRuFre"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://figshare.com/ndownloader/files/34327373" -O "$download_dir/scripts.mat.zip"
