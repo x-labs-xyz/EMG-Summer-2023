@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir="EMG of Healthy Subjects"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.mat
+wget "https://figshare.com/ndownloader/files/34041992" -O "$download_dir/scripts.mat"
+
