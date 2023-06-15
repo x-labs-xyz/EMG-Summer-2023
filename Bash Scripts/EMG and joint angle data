@@ -1,0 +1,17 @@
+#!/bin/bash
+
+download_dir="EMG and joint angle data"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://zenodo.org/record/4454570/files/Subject1.rar?download=1" -O "$download_dir/scripts.mat.zip"
+
+wget "https://zenodo.org/record/4454570/files/Subject2.rar?download=1" -O "$download_dir/scripts.mat.zip"
+
+wget "https://zenodo.org/record/4454570/files/Subject3.rar?download=1" -O "$download_dir/scripts.mat.zip"
+
+wget "https://zenodo.org/record/4454570/files/Subject4.rar?download=1" -O "$download_dir/scripts.mat.zip"
+
+wget "https://zenodo.org/record/4454570/files/Subject5.rar?download=1" -O "$download_dir/scripts.mat.zip"
