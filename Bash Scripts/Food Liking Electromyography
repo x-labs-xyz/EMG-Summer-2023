@@ -1,0 +1,47 @@
+
+#!/bin/bash
+
+download_dir="Food Liking Electromyograph"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+
+wget "https://zenodo.org/record/840580/files/FAL01.zip?download=1" -O "$download_dir/scripts1.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL02.zip?download=1" -O "$download_dir/scripts2.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL03.zip?download=1" -O "$download_dir/scripts3.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL04.zip?download=1" -O "$download_dir/scripts4.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL05.zip?download=1" -O "$download_dir/scripts5.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL06.zip?download=1" -O "$download_dir/scripts6.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL07.zip?download=1" -O "$download_dir/scripts7.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL08.zip?download=1" -O "$download_dir/scripts8.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL09.zip?download=1" -O "$download_dir/scripts9.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL10.zip?download=1" -O "$download_dir/scripts10.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL11.zip?download=1" -O "$download_dir/scripts11.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL12.zip?download=1" -O "$download_dir/scripts12.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL13.zip?download=1" -O "$download_dir/scripts13.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL14.zip?download=1" -O "$download_dir/scripts14.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL15.zip?download=1" -O "$download_dir/scripts15.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL16.zip?download=1" -O "$download_dir/scripts16.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL17.zip?download=1" -O "$download_dir/scripts17.zip"
+
+wget "https://zenodo.org/record/840580/files/FAL18.zip?download=1" -O "$download_dir/scripts18.zip"
+
+  
