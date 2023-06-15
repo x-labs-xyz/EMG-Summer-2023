@@ -1,0 +1,11 @@
+#!/bin/bash
+
+download_dir="EMG and control data "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.csv
+wget "https://figshare.com/ndownloader/articles/22572868/versions/3" -O "$download_dir/scripts.csv"
+
+
