@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 download_dir="EMG Rats"  # Replace with the desired directory path
