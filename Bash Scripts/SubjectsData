@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir="SubjectsData"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://figshare.com/ndownloader/files/8553184" -O "$download_dir/scripts.mat"
+
