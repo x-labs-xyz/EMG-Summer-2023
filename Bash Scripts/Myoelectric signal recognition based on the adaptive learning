@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="Myoelectric signal recognition based on the adaptive learning "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/j4pm6s3fzy-1.zip" -O "$download_dir/scripts.zip"
