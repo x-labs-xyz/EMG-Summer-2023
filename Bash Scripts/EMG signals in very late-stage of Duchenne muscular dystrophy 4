@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="EMG signals in very late-stage of Duchenne muscular dystrophy 4 "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://springernature.figshare.com/ndownloader/files/9207997" -O "$download_dir/scripts.zip"
