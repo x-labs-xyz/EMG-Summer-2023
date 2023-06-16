@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir="Kinetic and EMG Dataset of Daily Locomotion "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.rar
+wget "https://zenodo.org/record/6457662/files/Raw_data.rar?download=1" -O "$download_dir/scripts.rar"
+
