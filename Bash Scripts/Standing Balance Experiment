@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="Standing Balance Experiment"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://zenodo.org/record/3819630/files/Raw_Data.zip?download=1" -O "$download_dir/scripts.zip"
