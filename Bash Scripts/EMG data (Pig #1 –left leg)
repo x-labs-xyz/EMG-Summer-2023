@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir=" EMG data (Pig #1 –left leg) "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.xlsx
+wget "https://plos.figshare.com/ndownloader/files/39047433" -O "$download_dir/scripts.xlsx"
+
