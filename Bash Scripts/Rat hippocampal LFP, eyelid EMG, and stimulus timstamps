@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="Rat hippocampal LFP, eyelid EMG, and stimulus timstamps"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://figshare.com/ndownloader/articles/1135993/versions/15" -O "$download_dir/scripts.zip"
