@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="EMG S3 "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://figshare.com/ndownloader/articles/21777200/versions/2" -O "$download_dir/scripts.zip"
