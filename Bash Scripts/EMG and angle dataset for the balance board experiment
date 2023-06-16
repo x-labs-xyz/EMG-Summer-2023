@@ -1,0 +1,11 @@
+#!/bin/bash
+
+download_dir="EMG and angle dataset for the balance board experiment "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://figshare.com/ndownloader/articles/17068220/versions/1" -O "$download_dir/scripts.zip"
+
+
