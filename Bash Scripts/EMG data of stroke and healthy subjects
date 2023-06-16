@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir=" EMG data of stroke and healthy subjects "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://figshare.com/ndownloader/articles/19160963/versions/1" -O "$download_dir/scripts.zip"
