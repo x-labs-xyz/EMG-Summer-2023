@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir=" Electromyography Activity of the Vastus Intermedius and Gastrocnemius "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/6dh439wbnc-1.zip" -O "$download_dir/scripts.zip"
