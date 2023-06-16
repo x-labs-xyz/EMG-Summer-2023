@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir=" Characterization of forearm high-density "  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://data.4tu.nl/ndownloader/items/318e6d0f-122a-4c19-820d-05c5cfb1dd50/versions/1" -O "$download_dir/scripts.zip"
