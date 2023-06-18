@@ -1,0 +1,11 @@
+#!/bin/bash
+
+download_dir="EMG from forearm datasets"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://zenodo.org/record/3194792/files/Pinch.zip?download=1"  -O "$download_dir/scripts1.zip"
+
+wget "https://zenodo.org/record/3194792/files/Roshambo.zip?download=1"  -O "$download_dir/scripts1.zip"
