@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir="sEMG signals and Finger Kinematics" # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://ieee-dataport.s3.amazonaws.com/open/5440/Data.zip?response-content-disposition=attachment%3B%20filename%3D%22Data.zip%22&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJOHYI4KJCE6Q7MIQ%2F20230618%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230618T110131Z&X-Amz-SignedHeaders=Host&X-Amz-Expires=86400&X-Amz-Signature=4a5e6a6b539b0d696b76adab6191f0ae5bc6ed5b6274110de852126858e0718e"  -O "$download_dir/scripts.zip"
+
