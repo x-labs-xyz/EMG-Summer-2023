@@ -1,0 +1,13 @@
+#!/bin/bash
+
+download_dir="EMG-EPN-120"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://epnecuador-my.sharepoint.com/:f:/g/personal/laboratorio_ia_epn_edu_ec/EsEYFECP7fNGsSbR4b5ys7EBbN2LBOMcu-LYntQM74aBcA?e=sjhHww" -O "$download_dir/scripts.zip"
+
+
+
+
