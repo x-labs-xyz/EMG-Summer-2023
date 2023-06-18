@@ -1,0 +1,12 @@
+#!/bin/bash
+
+download_dir="EMG-IMU-EPN-100+"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://epnecuador-my.sharepoint.com/:f:/g/personal/laboratorio_ia_epn_edu_ec/EnUgKpozVsFPueuqFyZOqYwBAzrh8mYi5UyorPxxQC2g1Q?e=fS144a" -O "$download_dir/scripts.zip"
+
+
+
