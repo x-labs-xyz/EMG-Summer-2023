@@ -1,0 +1,14 @@
+#!/bin/bash
+
+download_dir="Measuring Einthoven II ECG and reference EMG"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://researchdata.gla.ac.uk/1236/3/participant_data.zip"  -O "$download_dir/scripts.zip"
+
+
+
+
+
