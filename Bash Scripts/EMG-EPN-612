@@ -1,0 +1,12 @@
+#!/bin/bash
+
+download_dir="EMG-EPN-612"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://doi.org/10.5281/zenodo.4023305" -O "$download_dir/scripts.zip"
+
+
+
