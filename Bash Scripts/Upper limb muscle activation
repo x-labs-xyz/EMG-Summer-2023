@@ -1,0 +1,9 @@
+#!/bin/bash
+
+download_dir="Upper limb muscle activation"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://researchdata.nie.edu.sg/dataset.xhtml?persistentId=doi:10.25340/R4/QCFDBS#"  -O "$download_dir/scripts.zip"
