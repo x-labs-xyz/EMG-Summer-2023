@@ -1,0 +1,10 @@
+#!/bin/bash
+
+download_dir="Dataset for multi-channel sEMG"  # Replace with the desired directory path
+
+# Create the download directory if it doesn't exist
+mkdir -p "$download_dir"
+
+# Download scripts.zip
+wget "https://prod-dcd-datasets-cache-zipfiles.s3.eu-west-1.amazonaws.com/ckwc76xr2z-2.zip"  -O "$download_dir/scripts.zip"
+
