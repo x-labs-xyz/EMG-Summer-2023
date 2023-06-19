@@ -1,7 +1,7 @@
 #Extract the contents of the zip file using the unzip command followed by the name of the zip file
 unzip yourfile.zip
 
-#convert all the .txt files to .csv within each participant folder
+#convert all the txt files to csv within each participant folder
 find . -type f -name "*.txt" -exec sh -c 'awk -F'\t' "{OFS=\",\"; print \$0}" "$1" > "${1%.txt}.csv"' sh {} \;
 
 #find and remove all the .txt files
