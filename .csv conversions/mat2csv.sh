@@ -1,17 +1,20 @@
 #!/bin/bash
 
-# Define the directory containing MATLAB files
-matlab_dir="/mnt/d/write/directory/of/the/matfiles"
+# Go to the directory containing the MATLAB files
+cd /mnt/d/NYU\ Summer/NINAPRO/DB1/s1
 
-# Iterate over MATLAB files in the directory
-for matlab_file in "$matlab_dir"/*.mat; do
-    # Extract the base filename without extension
-    base_filename=$(basename "$matlab_file" .mat)
-    
-    # Convert MATLAB file to CSV using Octave
-    octave --no-gui --quiet --eval "data = load('$matlab_file'); csvwrite('${matlab_dir}/${base_filename}.csv', data);"
-    
-    echo "Converted $matlab_file to ${matlab_dir}/${base_filename}.csv"
+# Loop through each MATLAB file in the directory
+for file in *.mat
+do
+    # Extract the filename without the extension
+    filename=$(basename "$file" .mat)
+
+    # Convert the MATLAB file to CSV using Octave's `save()` function
+    octave --eval "load('$file'); csvwrite('$filename.csv', emg);"
+
+    # Remove the MATLAB file
+    rm "$file"
 done
+
 
 echo "Conversion complete."
