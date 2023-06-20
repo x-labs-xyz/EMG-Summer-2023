@@ -1,0 +1,24 @@
+#load unrar
+module load unrar
+
+#unrar your file
+unrar x yourfilename.rar
+
+#convert all the txt files to csv within each participant folder
+find . -type f -name "*.txt" -exec sh -c 'awk -F'\t' "{OFS=\",\"; print \$0}" "$1" > "${1%.txt}.csv"' sh {} \;
+
+
+#find and remove all the .txt files
+find . -type f -name "*.txt" -delete
+
+
+#find and remove all the .log files
+find . -type f -name "*.log" -delete
+
+
+#find and remove all the log folders
+find . -type d -name "log" -exec rm -rf {} \;
+
+
+#change the file name txt to csv for all the files
+find . -type d -name "txt" -exec sh -c 'mv "$1" "${1%txt}csv"' sh {} \;
