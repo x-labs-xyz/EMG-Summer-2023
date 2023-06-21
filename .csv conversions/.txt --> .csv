@@ -1,8 +1,11 @@
-#Extract the contents of the zip file using the unzip command followed by the name of the zip file
-unzip yourfile.zip
+#!/bin/bash
 
-#convert all the txt files to csv within each participant folder
+
+#unzip all the zip files in your directory
+find /scratch/dn2206/ -name "scripts.zip" -exec unzip {} -d {}_unzipped \;
+
+#find and convert all the txt files to csv
 find . -type f -name "*.txt" -exec sh -c 'awk -F'\t' "{OFS=\",\"; print \$0}" "$1" > "${1%.txt}.csv"' sh {} \;
 
-#find and remove all the .txt files
-find . -type f -name "*.txt" -delete
+
+
