@@ -1,5 +1,7 @@
-#unzip your file
-unzip scripts.zip
+#!/bin/bash
+
+#unzip all the zip files in your directory
+find /scratch/dn2206/ -name "scripts.zip" -exec unzip {} -d {}_unzipped \;
 
 #install xlsx2csv
 pip install xlsx2csv
@@ -7,6 +9,3 @@ pip install xlsx2csv
 
 #find all the xlsx files and convert them to csv 
 find . -type f -name "*.xlsx" -exec sh -c 'xlsx2csv "$1" > "${1%.xlsx}.csv"' sh {} \;
-
-#find and delete the xlsx files if you no longer need them
-find . -type f -name "*.xlsx" -delete
