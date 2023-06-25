@@ -1,0 +1,1 @@
+find . -type f -name "*.sto" -exec bash -c 'base=$(basename "{}" .sto); awk -F"\t" '\''BEGIN {OFS=","} {$1=$1; print}'\'' "{}" > "$(dirname "{}")/${base}.csv"' \;
