@@ -1,0 +1,1 @@
+find /path/to/data -type f -name "*.sav" -exec bash -c 'python -c "import pandas as pd; df = pd.read_spss(\"$0\"); df.to_csv(\"${0%.sav}.csv\", index=False)"' {} \;
