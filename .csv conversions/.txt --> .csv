@@ -5,7 +5,7 @@
 find /scratch/dn2206/ -name "scripts.zip" -exec unzip {} -d {}_unzipped \;
 
 #find and convert all the txt files to csv
-find . -type f -name "*.txt" -exec sh -c 'awk -F'\t' "{OFS=\",\"; print \$0}" "$1" > "${1%.txt}.csv"' sh {} \;
+find . -type f -name "*.txt" -exec bash -c 'base=$(basename "{}" .txt); awk -F"\t" '\''BEGIN {OFS=","} {$1=$1; print}'\'' "{}" > "$(dirname "{}")/${base}.csv"' \;
 
 
 
