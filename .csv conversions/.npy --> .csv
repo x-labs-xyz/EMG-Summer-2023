@@ -1,0 +1,1 @@
+find . -name "*.npy" -type f -exec sh -c 'filename="{}"; directory=$(dirname "$filename"); base=$(basename "$filename" .npy); python -c "import numpy as np; data = np.load(\"$filename\"); np.savetxt(\"$directory/$base.csv\", data, delimiter=\",\")"' \;
