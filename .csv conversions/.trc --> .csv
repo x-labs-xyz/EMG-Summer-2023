@@ -1,0 +1,2 @@
+#rename the trc files by adding _trc in their file name because some of them have the same name as the .mot files in the directory
+find . -type f -name "*.trc" -exec bash -c 'directory=$(dirname "{}"); filename=$(basename "{}"); new_filename="${filename%.trc}_trc.trc"; mv -- "{}" "$directory/$new_filename"' \;
